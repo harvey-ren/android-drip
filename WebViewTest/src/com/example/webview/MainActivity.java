@@ -1,4 +1,6 @@
-package com.example.webdemo;
+package com.example.webview;
+
+import com.example.webdemo.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
