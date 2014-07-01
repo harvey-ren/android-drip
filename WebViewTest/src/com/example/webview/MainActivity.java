@@ -39,6 +39,7 @@ public class MainActivity extends Activity
 
 		// 设置执行能不能执行JavaScript
 		webView.getSettings().setJavaScriptEnabled(true);
+		// 支持缩放的功能
 		webView.getSettings().setSupportZoom(true);
 		webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
 		webView.requestFocus();
