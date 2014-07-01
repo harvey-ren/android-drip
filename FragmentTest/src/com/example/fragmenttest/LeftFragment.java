@@ -55,6 +55,8 @@ public class LeftFragment extends Fragment implements OnItemClickListener
 			byte[] buffer = new byte[1024];
 			int count = inputStream.read(buffer);
 			String detail = new String(buffer, 0, count, "utf-8");
+			
+			//Èç¹ûtextViewÎªnull
 			if (textView == null)
 			{
 				Intent intent = new Intent(getActivity(), DetailActivity.class);
