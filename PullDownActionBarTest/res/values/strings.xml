@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActionBar下拉菜单</string>
+
+    <string-array name="student">
+        <item>张三</item>
+        <item>李四 </item>
+        <item>王五 </item>
+        <item>赵六 </item>
+        <item>努力</item>
+    </string-array>
+
+</resources>
