@@ -86,13 +86,14 @@ public class MainActivity extends Activity
 		switch (keyCode)
 		{
 			case KeyEvent.KEYCODE_BACK:
-				// 如果能返回
+				// 如果能继续返回
 				if (webView.canGoBack())
 				{
 					// 点击返回按钮执行的方法
 					webView.goBack();
 				} else
 				{
+					// 如果不能返回就退出应用
 					this.finish();
 				}
 				return true;
