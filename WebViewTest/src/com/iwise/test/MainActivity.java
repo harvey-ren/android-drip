@@ -1,6 +1,4 @@
-package com.example.webview;
-
-import com.example.webdemo.R;
+package com.iwise.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -44,7 +42,7 @@ public class MainActivity extends Activity
 		webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
 		webView.requestFocus();
 
-		webView.loadUrl("http://leyu.miao.cn/weixin/index/list.jhtml");
+		webView.loadUrl("http://www.baidu.com");
 
 		webView.setWebViewClient(new WebViewClient()
 		{
@@ -88,8 +86,15 @@ public class MainActivity extends Activity
 		switch (keyCode)
 		{
 			case KeyEvent.KEYCODE_BACK:
-				// 点击返回按钮执行的方法
-				webView.goBack();
+				// 如果能返回
+				if (webView.canGoBack())
+				{
+					// 点击返回按钮执行的方法
+					webView.goBack();
+				} else
+				{
+					this.finish();
+				}
 				return true;
 
 			default:
