@@ -22,7 +22,7 @@ import android.widget.TextView;
  * 自定义BaseAdapter
 *
 * @ClassName: MyAdapter
-* @Description: TODO(这里用一句话描述这个类的作用)
+* @Description: 
 * @author Harvey
 * @date 2014-7-3 下午5:59:26
 *
