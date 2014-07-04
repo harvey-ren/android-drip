@@ -89,7 +89,7 @@ public class MainActivity extends Activity
 				// 如果能继续返回
 				if (webView.canGoBack())
 				{
-					// 点击返回按钮执行的方法
+					// 点击返回按钮执行返回方法
 					webView.goBack();
 				} else
 				{
