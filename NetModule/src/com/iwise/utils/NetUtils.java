@@ -1,4 +1,4 @@
-package cn.iwise.utils;
+package com.iwise.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

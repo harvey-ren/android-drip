@@ -1,12 +1,14 @@
-package cn.iwise.activity;
+package com.iwise.activity;
+
+import com.iwise.base.BaseActivity;
+import com.iwise.base.RZApplication;
+import com.iwise.data.RZSharedPreferences;
+import com.iwise.net.Request;
+import com.iwise.net.RequestManager;
+import com.iwise.utils.NetUtils;
 
 import android.view.View;
-import cn.iwise.base.BaseActivity;
-import cn.iwise.base.RZApplication;
-import cn.iwise.data.RZSharedPreferences;
-import cn.iwise.net.Request;
-import cn.iwise.net.RequestManager;
-import cn.iwise.utils.NetUtils;
+import cn.iwise.activity.R;
 
 /**
  * 主界面类

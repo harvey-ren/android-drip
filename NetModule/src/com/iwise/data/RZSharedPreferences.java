@@ -1,4 +1,4 @@
-package cn.iwise.data;
+package com.iwise.data;
 
 import android.content.Context;
 

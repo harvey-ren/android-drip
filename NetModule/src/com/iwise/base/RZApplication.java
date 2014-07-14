@@ -1,10 +1,11 @@
-package cn.iwise.base;
+package com.iwise.base;
+
+import com.iwise.data.RZSharedPreferences;
 
 import android.app.Application;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import cn.iwise.data.RZSharedPreferences;
 
 public class RZApplication extends Application
 {

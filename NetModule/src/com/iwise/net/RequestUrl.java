@@ -1,4 +1,4 @@
-package cn.iwise.net;
+package com.iwise.net;
 
 public class RequestUrl
 {

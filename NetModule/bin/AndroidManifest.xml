@@ -9,13 +9,13 @@
         android:targetSdkVersion="19" />
 
     <application
-        android:name="cn.iwise.base.RZApplication"
+        android:name="com.iwise.base.RZApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.iwise.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
             <intent-filter>

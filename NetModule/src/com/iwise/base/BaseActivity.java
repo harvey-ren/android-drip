@@ -1,4 +1,4 @@
-package cn.iwise.base;
+package com.iwise.base;
 
 import android.app.Activity;
 import android.os.Bundle;
