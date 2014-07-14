@@ -19,8 +19,6 @@ import java.util.Map;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
-import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -44,6 +42,8 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 	private static final int REQUEST_TIME_OUT = 60000;
 
 	private Context context;
+
+	private ResponseListener responseListener;
 
 	public NetworkAsyncTask(Context context)
 	{
@@ -135,16 +135,30 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 					str_result = EntityUtils.toString(httpResponse.getEntity(), HTTP.UTF_8);
 				} catch (IOException e)
 				{
-					return str_result;
+					e.printStackTrace();
 				}
+			}
+
+			if (httpPost != null)
+			{
+				// ÊÍ·Å×ÊÔ´
+				httpPost.abort();
 			}
 		}
 		return str_result;
 	}
 
+	@Override
+	protected void onPostExecute(String result)
+	{
+		super.onPostExecute(result);
+		System.out.println("result---------------->" + result);
+		responseListener.onResponseSuccess(ResponseParser.getInstance().parse(result));
+	}
+
 	public void setOnResponseListener(ResponseListener responseListener)
 	{
-
+		this.responseListener = responseListener;
 	}
 
 }
