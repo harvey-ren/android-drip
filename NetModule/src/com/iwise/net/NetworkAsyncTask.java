@@ -60,24 +60,24 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 	protected String doInBackground(Request... params)
 	{
 		String str_result = "";
+
 		Request request = params[0];
-
 		if (request == null)
-			return str_result;
-
-		String method = request.getRequestMethod().getMethodName();
-
-		if (method == null || method.equals(""))
 			return str_result;
 
 		String url = request.getUrl();
 		if (url == null || url.equals(""))
 			return str_result;
 
-		if (request.getRequestMethod().equals(RequestMethod.POST))
+		String method = request.getRequestMethod().getMethodName();
+		if (method == null || method.equals(""))
+			return str_result;
+
+		if (method.equals(RequestMethod.POST))
 		{
 			HttpPost httpPost = new HttpPost(url);
 			List<BasicNameValuePair> valueList = new ArrayList<BasicNameValuePair>();
+			
 			if (request.getParams() == null || request.getParams().isEmpty())
 				return str_result;
 			for (Map.Entry<String, String> param : request.getParams().entrySet())
@@ -152,7 +152,6 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 	protected void onPostExecute(String result)
 	{
 		super.onPostExecute(result);
-		System.out.println("result---------------->" + result);
 		responseListener.onResponseSuccess(ResponseParser.getInstance().parse(result));
 	}
 

@@ -22,7 +22,7 @@ public enum RequestMethod
 
 	public String getMethodName()
 	{
-		return method;
+		return this.method;
 	}
 
 }

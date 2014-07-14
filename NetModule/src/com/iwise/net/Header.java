@@ -29,7 +29,7 @@ public class Header
 	public static final String CANNEL_CODE = "2000001";
 
 	/**
-	 * 应用类型 1：云备份 2：卫士
+	 * APP类型
 	 */
 	public static final String APP_TYPE = "2";
 }
