@@ -2,23 +2,22 @@ package com.iwise.data;
 
 import android.content.Context;
 
+/**
+ * SharedPreferences类
+ * 
+ * @ClassName: RZSharedPreferences
+ * @Description:SharedPreferences类
+ * @author Harvey
+ * @date 2014-7-14 上午11:12:32
+ * 
+ */
 public class RZSharedPreferences
 {
 
+	/**
+	 * RZSharedPreferences实例
+	 */
 	private static RZSharedPreferences instance = null;
-
-	private RZSharedPreferences()
-	{
-	}
-
-	public static RZSharedPreferences getInstance()
-	{
-		if (instance == null)
-		{
-			instance = new RZSharedPreferences();
-		}
-		return instance;
-	}
 
 	/**
 	 * 文件名称
@@ -29,6 +28,31 @@ public class RZSharedPreferences
 	 * 用户id的Key值
 	 */
 	private static final String KEY_USERID = "userid";
+
+	/**
+	 * 用户手机号码的Key值
+	 */
+	private static final String KEY_PHONE_NUMBER = "phone_number";
+
+	/**
+	 * 密码的Key值
+	 */
+	private static final String KEY_PASSWORD = "password";
+
+	// 私有构造方法
+	private RZSharedPreferences()
+	{
+	}
+
+	// 单例
+	public static RZSharedPreferences getInstance()
+	{
+		if (instance == null)
+		{
+			instance = new RZSharedPreferences();
+		}
+		return instance;
+	}
 
 	/**
 	 * 获取用户的id
@@ -42,11 +66,6 @@ public class RZSharedPreferences
 	}
 
 	/**
-	 * 用户手机号码的Key值
-	 */
-	private static final String KEY_PHONE_NUMBER = "phone_number";
-
-	/**
 	 * 获取手机号码
 	 * 
 	 * @param context
@@ -56,11 +75,6 @@ public class RZSharedPreferences
 	{
 		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PHONE_NUMBER, "");
 	}
-
-	/**
-	 * 密码的Key值
-	 */
-	private static final String KEY_PASSWORD = "password";
 
 	/**
 	 * 获取密码

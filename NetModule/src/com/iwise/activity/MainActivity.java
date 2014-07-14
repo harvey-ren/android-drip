@@ -18,7 +18,6 @@ import cn.iwise.activity.R;
  */
 public class MainActivity extends BaseActivity
 {
-
 	@Override
 	protected void setLayoutXml()
 	{
@@ -32,7 +31,10 @@ public class MainActivity extends BaseActivity
 	 */
 	public void request(View view)
 	{
-		System.out.println("request");
+		if (NetUtils.isDebug)
+		{
+			System.out.println("request方法");
+		}
 
 		// 如果网络可用的情况下
 		if (NetUtils.isNetworkAvailable(this))
