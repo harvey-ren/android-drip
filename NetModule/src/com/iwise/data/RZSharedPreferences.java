@@ -141,7 +141,7 @@ public class RZSharedPreferences
 	 * 设置密码
 	 * 
 	 * @Title: setPassWord
-	 * @Description: TODO
+	 * @Description:
 	 * @param @param context
 	 * @param @param value 设定文件
 	 * @return void 返回类型

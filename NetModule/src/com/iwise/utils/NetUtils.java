@@ -16,13 +16,17 @@ public class NetUtils
 	/**
 	 * 是否调试模式
 	 */
-	public static final boolean isDebug = false;
+	public static final boolean isDebug = true;
 
 	/**
 	 * 判断网络是否可用
 	 * 
-	 * @param context
-	 * @return
+	 * @Title: isNetworkAvailable
+	 * @Description:
+	 * @param @param context
+	 * @param @return
+	 * @return boolean 返回类型
+	 * @throws
 	 */
 	public static boolean isNetworkAvailable(Context context)
 	{

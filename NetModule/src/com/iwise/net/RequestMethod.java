@@ -1,9 +1,12 @@
 package com.iwise.net;
 
 /**
- * 请求方法
+ * 枚举 请求方法
  * 
+ * @ClassName: RequestMethod
+ * @Description:
  * @author Harvey
+ * @date 2014-7-14 下午1:13:33
  * 
  */
 public enum RequestMethod

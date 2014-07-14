@@ -8,6 +8,10 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
+    <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name="com.iwise.base.RZApplication"
         android:allowBackup="true"
