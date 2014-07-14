@@ -1,6 +1,7 @@
 package com.iwise.data;
 
 import android.content.Context;
+import android.content.SharedPreferences.Editor;
 
 /**
  * SharedPreferences类
@@ -39,12 +40,27 @@ public class RZSharedPreferences
 	 */
 	private static final String KEY_PASSWORD = "password";
 
-	// 私有构造方法
+	/**
+	 * 私有构造方法
+	 * 
+	 * Title:
+	 * 
+	 * Description:
+	 * 
+	 */
 	private RZSharedPreferences()
 	{
 	}
 
-	// 单例
+	/**
+	 * 单例
+	 * 
+	 * @Title: getInstance
+	 * @Description: TODO
+	 * @param @return 设定文件
+	 * @return RZSharedPreferences 返回类型
+	 * @throws
+	 */
 	public static RZSharedPreferences getInstance()
 	{
 		if (instance == null)
@@ -66,6 +82,23 @@ public class RZSharedPreferences
 	}
 
 	/**
+	 * 设置用户id的值
+	 * 
+	 * @Title: putUserId
+	 * @Description:
+	 * @param @param context
+	 * @param @param value 传入的值
+	 * @return void 返回类型
+	 * @throws
+	 */
+	public static void setUserId(Context context, String value)
+	{
+		Editor editor = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).edit();
+		editor.putString(KEY_USERID, value);
+		editor.commit();
+	}
+
+	/**
 	 * 获取手机号码
 	 * 
 	 * @param context
@@ -77,6 +110,23 @@ public class RZSharedPreferences
 	}
 
 	/**
+	 * 设置手机号码
+	 * 
+	 * @Title: setPhoneNumber
+	 * @Description:
+	 * @param @param context
+	 * @param @param value 设定文件
+	 * @return void 返回类型
+	 * @throws
+	 */
+	public static void setPhoneNumber(Context context, String value)
+	{
+		Editor editor = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).edit();
+		editor.putString(KEY_PHONE_NUMBER, value);
+		editor.commit();
+	}
+
+	/**
 	 * 获取密码
 	 * 
 	 * @param context
@@ -85,6 +135,23 @@ public class RZSharedPreferences
 	public static String getPassWord(Context context)
 	{
 		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PASSWORD, "");
+	}
+
+	/**
+	 * 设置密码
+	 * 
+	 * @Title: setPassWord
+	 * @Description: TODO
+	 * @param @param context
+	 * @param @param value 设定文件
+	 * @return void 返回类型
+	 * @throws
+	 */
+	public static void setPassWord(Context context, String value)
+	{
+		Editor editor = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).edit();
+		editor.putString(KEY_PASSWORD, value);
+		editor.commit();
 	}
 
 }

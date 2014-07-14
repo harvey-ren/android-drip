@@ -19,7 +19,7 @@ public class NetUtils
 	public static final boolean isDebug = false;
 
 	/**
-	 * 网络是否可用
+	 * 判断网络是否可用
 	 * 
 	 * @param context
 	 * @return

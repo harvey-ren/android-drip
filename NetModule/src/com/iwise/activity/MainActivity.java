@@ -31,12 +31,7 @@ public class MainActivity extends BaseActivity
 	 */
 	public void request(View view)
 	{
-		if (NetUtils.isDebug)
-		{
-			System.out.println("request方法");
-		}
 
-		// 如果网络可用的情况下
 		if (NetUtils.isNetworkAvailable(this))
 		{
 			String userid = RZSharedPreferences.getUserId(this);
