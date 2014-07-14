@@ -1,8 +1,8 @@
 package com.iwise.activity;
 
 import android.view.View;
-import cn.iwise.activity.R;
 
+import com.iwise.activity.R;
 import com.iwise.base.BaseActivity;
 import com.iwise.base.RZApplication;
 import com.iwise.data.RZSharedPreferences;

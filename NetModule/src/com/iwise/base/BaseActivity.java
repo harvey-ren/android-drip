@@ -3,8 +3,8 @@ package com.iwise.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import cn.iwise.activity.R;
 
+import com.iwise.activity.R;
 import com.iwise.net.NetworkAsyncTask;
 import com.iwise.net.Request;
 import com.iwise.net.ResponseListener;
@@ -18,6 +18,8 @@ import com.iwise.utils.NetUtils;
  */
 public abstract class BaseActivity extends Activity
 {
+
+	protected byte REQUESTCODE = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -90,6 +92,15 @@ public abstract class BaseActivity extends Activity
 		}
 	}
 
+	/**
+	 * 显示设置网路的提示对话框
+	 * 
+	 * @Title: showSettingNetWorkDialog
+	 * @Description:
+	 * @param 设定文件
+	 * @return void 返回类型
+	 * @throws
+	 */
 	private void showSettingNetWorkDialog()
 	{
 		// 显示设置网络的对话框

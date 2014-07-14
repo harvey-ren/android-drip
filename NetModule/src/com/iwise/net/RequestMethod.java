@@ -20,7 +20,7 @@ public enum RequestMethod
 		this.method = method;
 	}
 
-	public String getRequestMethod()
+	public String getMethodName()
 	{
 		return method;
 	}
