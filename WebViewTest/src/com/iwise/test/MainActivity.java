@@ -42,7 +42,7 @@ public class MainActivity extends Activity
 		webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
 		webView.requestFocus();
 
-		webView.loadUrl("http://www.baidu.com");
+		webView.loadUrl("http://leyu.miao.cn/weixin/index/list.jhtml");
 
 		webView.setWebViewClient(new WebViewClient()
 		{
