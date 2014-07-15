@@ -2,7 +2,6 @@ package com.iwise.activity;
 
 import android.view.View;
 
-import com.iwise.activity.R;
 import com.iwise.base.BaseActivity;
 import com.iwise.base.RZApplication;
 import com.iwise.data.RZSharedPreferences;
@@ -34,8 +33,6 @@ public class MainActivity extends BaseActivity
 	 */
 	public void request(View view)
 	{
-		if (NetUtils.isDebug)
-			System.out.println("request方法被执行>>>>>>>>>>");
 		if (NetUtils.isNetworkAvailable(this))
 		{
 			String userid = RZSharedPreferences.getUserId(this);
@@ -43,20 +40,27 @@ public class MainActivity extends BaseActivity
 			String password = RZSharedPreferences.getPassWord(this);
 			Request request = RequestManager.getInstance().getInitRequest(phonenumber, password, userid, RZApplication.getInstance().getAppVersionCode());
 			NetworkAsyncTask networkAsyncTask = new NetworkAsyncTask(this, "初始化");
-			startAsyncTask(networkAsyncTask, request, new ResponseListener()
-			{
-				@Override
-				public void onResponseSuccess(NetWorkResponse response)
-				{
-					System.out.println("成功>>>>>>>>>>");
-				}
-
-				@Override
-				public void onResponseFail()
-				{
-					System.out.println("失败>>>>>>>>>>");
-				}
-			});
+			networkAsyncTask.setOnResponseListener(new MyResponseListener());
+			networkAsyncTask.execute(request);
+		} else
+		{
+			showSettingNetWorkDialog();
 		}
 	}
+
+	private class MyResponseListener extends ResponseListener
+	{
+		@Override
+		public void onResponseSuccess(NetWorkResponse response)
+		{
+			System.out.println("成功>>>>>>>>>>");
+		}
+
+		@Override
+		public void onResponseFail()
+		{
+			System.out.println("失败>>>>>>>>>>");
+		}
+	}
+
 }

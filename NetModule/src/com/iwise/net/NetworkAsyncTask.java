@@ -322,9 +322,7 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 			responseListener.onResponseFail();
 		} else if (result.equals(TASK_CANCEL))
 		{
-
 			Toast.makeText(context, "任务取消！", Toast.LENGTH_SHORT);
-
 		} else
 		{
 			System.out.println(result);

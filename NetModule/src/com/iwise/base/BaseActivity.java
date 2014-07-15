@@ -69,30 +69,6 @@ public abstract class BaseActivity extends Activity
 	}
 
 	/**
-	 * 开启异步线程
-	 * 
-	 * @Title: startAsyncTask
-	 * @Description:
-	 * @param @param networkAsyncTask
-	 * @param @param request
-	 * @param @param responseListener 设定文件
-	 * @return void 返回类型
-	 * @throws
-	 */
-	protected void startAsyncTask(NetworkAsyncTask networkAsyncTask, Request request, ResponseListener responseListener)
-	{
-		// 首先检查网络是否可用
-		if (NetUtils.isNetworkAvailable(this))
-		{
-			networkAsyncTask.setOnResponseListener(responseListener);
-			networkAsyncTask.execute(request);
-		} else
-		{
-			showSettingNetWorkDialog();
-		}
-	}
-
-	/**
 	 * 显示设置网路的提示对话框
 	 * 
 	 * @Title: showSettingNetWorkDialog
@@ -101,7 +77,7 @@ public abstract class BaseActivity extends Activity
 	 * @return void 返回类型
 	 * @throws
 	 */
-	private void showSettingNetWorkDialog()
+	protected void showSettingNetWorkDialog()
 	{
 		// 显示设置网络的对话框
 		NetUtils.showDialog(this, getString(R.string.no_network_whether_set), new DialogButtonListener()

@@ -23,6 +23,15 @@ public class RequestManager
 	{
 	}
 
+	/**
+	 * 得到单例
+	 * 
+	 * @Title: getInstance
+	 * @Description:
+	 * @param @return
+	 * @return RequestManager 返回类型
+	 * @throws
+	 */
 	public static RequestManager getInstance()
 	{
 		if (requestManager == null)
