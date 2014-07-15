@@ -61,25 +61,35 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 	{
 		String str_result = "";
 
+		// 得到Request对象
 		Request request = params[0];
 		if (request == null)
 			return str_result;
 
+		// 得到url地址
 		String url = request.getUrl();
 		if (url == null || url.equals(""))
 			return str_result;
 
+		// 得到的请求方法
 		String method = request.getRequestMethod().getMethodName();
 		if (method == null || method.equals(""))
 			return str_result;
 
+		// 如果方法为POST方法
 		if (method.equals(RequestMethod.POST))
 		{
+			// 创建HttpPost对象
 			HttpPost httpPost = new HttpPost(url);
+
+			// 集合
 			List<BasicNameValuePair> valueList = new ArrayList<BasicNameValuePair>();
-			
+
+			// 如果请求参数是空的
 			if (request.getParams() == null || request.getParams().isEmpty())
 				return str_result;
+
+			// 遍历添加参数
 			for (Map.Entry<String, String> param : request.getParams().entrySet())
 			{
 				valueList.add(new BasicNameValuePair(param.getKey(), param.getValue()));
@@ -92,6 +102,7 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 				e.printStackTrace();
 				return str_result;
 			}
+			
 			httpPost.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, REQUEST_TIME_OUT);
 			httpPost.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, REQUEST_TIME_OUT);
 
@@ -111,6 +122,7 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 			httpPost.setHeader("Type", Header.APP_TYPE);
 			httpPost.setHeader("Timestamp", System.currentTimeMillis() + "");
 
+			// 创建DefaultHttpClient
 			DefaultHttpClient client = new DefaultHttpClient();
 
 			HttpResponse httpResponse;
@@ -122,12 +134,12 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 			{
 				if (httpPost != null)
 				{
-					// 释放资源
-					httpPost.abort();
+					httpPost.abort();// 释放资源
 				}
 				return str_result;
 			}
 
+			//
 			if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK)
 			{
 				try
@@ -141,8 +153,7 @@ public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 
 			if (httpPost != null)
 			{
-				// 释放资源
-				httpPost.abort();
+				httpPost.abort();// 释放资源
 			}
 		}
 		return str_result;

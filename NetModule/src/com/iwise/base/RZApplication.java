@@ -118,11 +118,13 @@ public class RZApplication extends Application
 	 */
 	public String getAppVersionName()
 	{
+		// 创建包管理者对象
 		PackageManager packageManager = this.getPackageManager();
-		// getPackageName()是你当前类的包名，0代表是获取版本信息
+
 		String versionName = "";
 		try
 		{
+			// getPackageName()是你当前类的包名，0代表是获取版本信息
 			PackageInfo packInfo = packageManager.getPackageInfo(this.getPackageName(), 0);
 			versionName = packInfo.versionName;
 		} catch (NameNotFoundException e)
