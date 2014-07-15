@@ -42,13 +42,19 @@ public class MainActivity extends BaseActivity
 			String phonenumber = RZSharedPreferences.getPhoneNumber(this);
 			String password = RZSharedPreferences.getPassWord(this);
 			Request request = RequestManager.getInstance().getInitRequest(phonenumber, password, userid, RZApplication.getInstance().getAppVersionCode());
-			NetworkAsyncTask networkAsyncTask = new NetworkAsyncTask(this);
+			NetworkAsyncTask networkAsyncTask = new NetworkAsyncTask(this, "初始化");
 			startAsyncTask(networkAsyncTask, request, new ResponseListener()
 			{
 				@Override
 				public void onResponseSuccess(NetWorkResponse response)
 				{
+					System.out.println("成功>>>>>>>>>>");
+				}
 
+				@Override
+				public void onResponseFail()
+				{
+					System.out.println("失败>>>>>>>>>>");
 				}
 			});
 		}

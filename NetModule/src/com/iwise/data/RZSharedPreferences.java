@@ -78,7 +78,7 @@ public class RZSharedPreferences
 	 */
 	public static String getUserId(Context context)
 	{
-		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_USERID, "");
+		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_USERID, "2");
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class RZSharedPreferences
 	 */
 	public static String getPhoneNumber(Context context)
 	{
-		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PHONE_NUMBER, "");
+		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PHONE_NUMBER, "13071108110");
 	}
 
 	/**
@@ -134,7 +134,7 @@ public class RZSharedPreferences
 	 */
 	public static String getPassWord(Context context)
 	{
-		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PASSWORD, "");
+		return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).getString(KEY_PASSWORD, "123456");
 	}
 
 	/**
