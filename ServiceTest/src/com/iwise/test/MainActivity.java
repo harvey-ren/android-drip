@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
- * Ö÷½çÃæ
+ * ä¸»ç•Œé¢
  * 
  * @ClassName: MainActivity
  * @Description:
  * @author Harvey
- * @date 2014-7-16 ÏÂÎç1:20:37
+ * @date 2014-7-16 ä¸‹åˆ1:43:43
  * 
  */
 
