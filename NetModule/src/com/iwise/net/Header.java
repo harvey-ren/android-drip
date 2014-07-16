@@ -1,7 +1,7 @@
 package com.iwise.net;
 
 /**
- * ����ͷ����
+ * 请求头常量
  * 
  * @author Harvey
  * 
