@@ -1,16 +1,12 @@
 package com.iwise.net;
 
 /**
-<<<<<<< HEAD
- * ÇëÇóÍ·³£Á¿Àà
-=======
- * è¯·æ±‚å¤´å¸¸é‡
->>>>>>> origin/master
+ * è¯·æ±‚å¤´å¸¸é‡ç±»
  * 
  * @ClassName: Header
  * @Description:
  * @author Harvey
- * @date 2014-7-16 ÉÏÎç10:29:48
+ * @date 2014-7-16 ä¸Šåˆ10:29:48
  * 
  */
 public class Header
@@ -26,7 +22,7 @@ public class Header
 	public static final String PLATFORM = "1";
 
 	/**
-	 * æƒç 
+	 * è®¤è¯id
 	 */
 	public static final String AUTHID = "123456";
 
