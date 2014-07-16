@@ -1,7 +1,11 @@
 package com.iwise.net;
 
 /**
+<<<<<<< HEAD
  * ÇëÇóÍ·³£Á¿Àà
+=======
+ * è¯·æ±‚å¤´å¸¸é‡
+>>>>>>> origin/master
  * 
  * @ClassName: Header
  * @Description:
@@ -17,22 +21,22 @@ public class Header
 	public static final String USER_AGENT = "Defender-apk";
 
 	/**
-	 * Æ½Ì¨
+	 * å¹³å°
 	 */
 	public static final String PLATFORM = "1";
 
 	/**
-	 * È¨Âë
+	 * æƒç 
 	 */
 	public static final String AUTHID = "123456";
 
 	/**
-	 * ÇşµÀºÅ
+	 * æ¸ é“å·
 	 */
 	public static final String CANNEL_CODE = "2000001";
 
 	/**
-	 * APPÀàĞÍ
+	 * APPç±»å‹
 	 */
 	public static final String APP_TYPE = "2";
 }

@@ -3,7 +3,11 @@ package com.iwise.net;
 import java.util.HashMap;
 
 /**
+<<<<<<< HEAD
  * ÇëÇó¶ÔÏóÀà
+=======
+ * è¯·æ±‚ç±»
+>>>>>>> origin/master
  * 
  * @ClassName: Request
  * @Description:
