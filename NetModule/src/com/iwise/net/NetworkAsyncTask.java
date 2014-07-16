@@ -1,14 +1,3 @@
-/**
- * 
- * 异步加载类
- * 
- * @File: NetworkAsyncTask.java
- * @Package com.iwise.net
- * @Description:
- * @author Harvey
- * @date 2014-7-14 下午2:21:39
- * 
- */
 package com.iwise.net;
 
 import java.io.IOException;
@@ -43,6 +32,17 @@ import com.iwise.activity.R;
 import com.iwise.base.RZApplication;
 import com.iwise.utils.CustomDialog;
 
+/**
+ * 
+ * 异步加载类
+ * 
+ * @File: NetworkAsyncTask.java
+ * @Package com.iwise.net
+ * @Description:
+ * @author Harvey
+ * @date 2014-7-14 下午2:21:39
+ * 
+ */
 public class NetworkAsyncTask extends AsyncTask<Request, Void, String>
 {
 

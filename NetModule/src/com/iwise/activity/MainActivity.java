@@ -15,7 +15,10 @@ import com.iwise.utils.NetUtils;
 /**
  * 主界面类
  * 
+ * @ClassName: MainActivity
+ * @Description:
  * @author Harvey
+ * @date 2014-7-16 上午10:24:26
  * 
  */
 public class MainActivity extends BaseActivity

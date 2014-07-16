@@ -1,14 +1,15 @@
-/**  
- *抽象类
+package com.iwise.base;
+
+/**
+ * 对话框按钮的监听类
+ * 
  * @File: DialogButtonListener.java
  * @Package com.iwise.base
- * @Description: 
- * @author Harvey  
+ * @Description:
+ * @author Harvey
  * @date 2014-7-14 下午4:08:34
  * 
  */
-package com.iwise.base;
-
 public abstract class DialogButtonListener
 {
 	/**

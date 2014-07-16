@@ -8,9 +8,12 @@ import com.iwise.activity.R;
 import com.iwise.utils.NetUtils;
 
 /**
- * 抽象类 基类
+ * 基类
  * 
+ * @ClassName: BaseActivity
+ * @Description:
  * @author Harvey
+ * @date 2014-7-16 上午10:24:50
  * 
  */
 public abstract class BaseActivity extends Activity

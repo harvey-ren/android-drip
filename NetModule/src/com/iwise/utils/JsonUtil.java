@@ -5,9 +5,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Json对象操作类
+ * Json工具类
  * 
+ * @ClassName: JsonUtil
+ * @Description: 
  * @author Harvey
+ * @date 2014-7-16 上午10:32:24
  * 
  */
 public class JsonUtil

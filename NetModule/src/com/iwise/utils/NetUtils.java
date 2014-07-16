@@ -14,7 +14,10 @@ import com.iwise.base.DialogButtonListener;
 /**
  * 网络相关的工具类
  * 
+ * @ClassName: NetUtils
+ * @Description: 
  * @author Harvey
+ * @date 2014-7-16 上午10:32:44
  * 
  */
 public class NetUtils

@@ -10,10 +10,12 @@ import android.view.Window;
 import android.view.WindowManager;
 
 /**
- * 自定义对话框
+ * 自定义对话框类
  * 
+ * @ClassName: CustomDialog
+ * @Description:
  * @author Harvey
- * 
+ * @date 2014-7-16 上午10:32:01
  * 
  */
 public class CustomDialog extends Dialog

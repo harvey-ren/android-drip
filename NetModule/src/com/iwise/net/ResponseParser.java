@@ -9,7 +9,10 @@ import com.iwise.utils.ResultCode;
 /**
  * 备份响应解析类
  * 
+ * @ClassName: ResponseParser
+ * @Description:
  * @author Harvey
+ * @date 2014-7-16 上午10:31:42
  * 
  */
 public class ResponseParser

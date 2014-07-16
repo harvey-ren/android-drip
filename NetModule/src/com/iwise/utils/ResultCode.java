@@ -1,9 +1,12 @@
 package com.iwise.utils;
 
 /**
- * 结果码
+ * 结果码敞亮
  * 
+ * @ClassName: ResultCode
+ * @Description: TODO(这里用一句话描述这个类的作用)
  * @author Harvey
+ * @date 2014-7-16 上午10:33:00
  * 
  */
 public class ResultCode

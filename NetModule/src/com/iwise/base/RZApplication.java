@@ -16,6 +16,15 @@ import android.view.WindowManager;
 import com.iwise.data.RZSharedPreferences;
 import com.iwise.utils.NetUtils;
 
+/**
+ * 重写Application类
+ * 
+ * @ClassName: RZApplication
+ * @Description:
+ * @author Harvey
+ * @date 2014-7-16 上午10:25:56
+ * 
+ */
 public class RZApplication extends Application
 {
 
@@ -48,6 +57,11 @@ public class RZApplication extends Application
 		getScreenInfo();
 	}
 
+	public static RZApplication getInstance()
+	{
+		return instance;
+	}
+
 	private void getScreenInfo()
 	{
 		WindowManager windowManager = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
@@ -66,21 +80,43 @@ public class RZApplication extends Application
 		}
 	}
 
+	/**
+	 * 得到屏幕的宽度
+	 * 
+	 * @Title: getScreenWith
+	 * @Description:
+	 * @param @return
+	 * @return int
+	 * @throws
+	 */
 	public int getScreenWith()
 	{
 		return screen_with;
 	}
 
+	/**
+	 * 得到屏幕的高度
+	 * 
+	 * @Title: getScreenHeight
+	 * @Description:
+	 * @param @return
+	 * @return int
+	 * @throws
+	 */
 	public int getScreenHeight()
 	{
 		return screen_height;
 	}
 
-	public static RZApplication getInstance()
-	{
-		return instance;
-	}
-
+	/**
+	 * 得到屏幕的密度
+	 * 
+	 * @Title: getScreenDensity
+	 * @Description: TODO
+	 * @param @return
+	 * @return float
+	 * @throws
+	 */
 	public float getScreenDensity()
 	{
 		return screen_density;
@@ -159,8 +195,12 @@ public class RZApplication extends Application
 
 	/**
 	 * 
-	 * @param context
-	 * @return
+	 * @Title: getMacAddress
+	 * @Description:
+	 * @param @param context
+	 * @param @return 设定文件
+	 * @return String 返回类型
+	 * @throws
 	 */
 	private String getMacAddress(Context context)
 	{
@@ -237,7 +277,6 @@ public class RZApplication extends Application
 			return "未知";
 
 		return telephonyManager.getSimOperatorName();
-
 	}
 
 }

@@ -3,9 +3,12 @@ package com.iwise.net;
 import java.util.HashMap;
 
 /**
- * 请求类
+ * 请求对象类
  * 
+ * @ClassName: Request
+ * @Description:
  * @author Harvey
+ * @date 2014-7-16 上午10:23:50
  * 
  */
 public class Request

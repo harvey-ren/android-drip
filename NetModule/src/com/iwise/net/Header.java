@@ -1,9 +1,12 @@
 package com.iwise.net;
 
 /**
- * 请求头常量
+ * 请求头常量类
  * 
+ * @ClassName: Header
+ * @Description:
  * @author Harvey
+ * @date 2014-7-16 上午10:29:48
  * 
  */
 public class Header

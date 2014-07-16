@@ -1,16 +1,17 @@
-/**  
- *
- * @File: NetWorkResponse.java
- * @Package com.iwise.net
- * @Description: 
- * @author Harvey  
- * @date 2014-7-14 下午2:38:21
- * 
- */
 package com.iwise.net;
 
 import java.io.Serializable;
 
+/**
+ * 响应类
+ * 
+ * @File: NetWorkResponse.java
+ * @Package com.iwise.net
+ * @Description:
+ * @author Harvey
+ * @date 2014-7-14 下午2:38:21
+ * 
+ */
 public class NetWorkResponse implements Serializable
 {
 
