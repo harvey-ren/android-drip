@@ -20,62 +20,54 @@ import android.widget.TextView;
 
 /**
  * 自定义BaseAdapter
-*
-* @ClassName: MyAdapter
-* @Description: 
-* @author Harvey
-* @date 2014-7-3 下午5:59:26
-*
+ * 
+ * @ClassName: MyAdapter
+ * @Description:
+ * @author Harvey
+ * @date 2014-7-3 下午5:59:26
+ * 
  */
-public class MyAdapter extends BaseAdapter
-{
+public class MyAdapter extends BaseAdapter {
 	ArrayList<String> dataList = new ArrayList<String>();
 	private LayoutInflater mInflater;
 	private Context mContext;
 
-	public MyAdapter(Context mContext)
-	{
+	public MyAdapter(Context mContext) {
 		this.mContext = mContext;
 		this.mInflater = LayoutInflater.from(this.mContext);
 	}
 
-	public void putDataList(ArrayList<String> dataList)
-	{
+	public void putDataList(ArrayList<String> dataList) {
 		this.dataList = dataList;
 	}
 
 	@Override
-	public int getCount()
-	{
+	public int getCount() {
 		return dataList.size();
 	}
 
 	@Override
-	public Object getItem(int position)
-	{
+	public Object getItem(int position) {
 		return dataList.get(position);
 	}
 
 	@Override
-	public long getItemId(int position)
-	{
+	public long getItemId(int position) {
 		return position;
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent)
-	{
+	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder holder = null;
 		String data = dataList.get(position);
-
-		if (convertView == null)
-		{
+		System.out.println("data" + data);
+		if (convertView == null) {
 			convertView = mInflater.inflate(R.layout.item, null);
 			holder = new ViewHolder();
 			convertView.setTag(holder);
-			holder.textView = (TextView) convertView.findViewById(R.id.textView);
-		} else
-		{
+			holder.textView = (TextView) convertView
+					.findViewById(R.id.textView);
+		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
 
@@ -83,8 +75,7 @@ public class MyAdapter extends BaseAdapter
 		return convertView;
 	}
 
-	private static class ViewHolder
-	{
+	private static class ViewHolder {
 		public TextView textView = null;
 
 	}
