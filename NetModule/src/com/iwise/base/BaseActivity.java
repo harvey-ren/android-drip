@@ -5,9 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.iwise.activity.R;
-import com.iwise.net.NetworkAsyncTask;
-import com.iwise.net.Request;
-import com.iwise.net.ResponseListener;
 import com.iwise.utils.NetUtils;
 
 /**
