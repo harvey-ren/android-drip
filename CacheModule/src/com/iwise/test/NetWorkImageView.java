@@ -10,6 +10,15 @@ import android.widget.LinearLayout;
 
 import com.iwise.test.BitmapLoader.OnBitmapLoadFinishedListener;
 
+/**
+ * ÖØÐ´ImageView¿Ø¼þ
+ * 
+ * @ClassName: NetWorkImageView
+ * @Description:
+ * @author Harvey
+ * @date 2014-7-16 ÏÂÎç1:05:23
+ * 
+ */
 public class NetWorkImageView extends ImageView
 {
 	private static BitmapLoader mBitmapLoader;
@@ -82,22 +91,6 @@ public class NetWorkImageView extends ImageView
 			}
 		}
 	}
-
-	// private void setProgressBar()
-	// {
-	// Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(),
-	// R.drawable.default_img);
-	// double ratio = bitmap.getWidth() /
-	// (FTApplication.getInstance().getScreenWith() * 1.0);
-	// int scaledHeight = (int) (bitmap.getHeight() / ratio);
-	// LinearLayout.LayoutParams params = new
-	// LinearLayout.LayoutParams(FTApplication.getInstance().getScreenWith() -
-	// 20, scaledHeight - 20);
-	// params.gravity = Gravity.CENTER_HORIZONTAL;
-	// setLayoutParams(params);
-	// setBackgroundResource(R.drawable.default_img);
-	// setScaleType(ScaleType.FIT_XY);
-	// }
 
 	protected void addImage(Bitmap bitmap)
 	{
