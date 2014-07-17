@@ -60,6 +60,15 @@ public class RZService extends Service
 		}
 	}
 
+	/**
+	 * 重写Binder
+	 * 
+	 * @ClassName: RZServiceBinder
+	 * @Description:
+	 * @author Harvey
+	 * @date 2014-7-16 下午3:09:05
+	 * 
+	 */
 	public class RZServiceBinder extends Binder
 	{
 		public RZService getService()
@@ -70,6 +79,7 @@ public class RZService extends Service
 
 	private final RZServiceBinder serviceBinder = new RZServiceBinder();
 
+	// 绑定时执行
 	@Override
 	public IBinder onBind(Intent intent)
 	{
@@ -77,6 +87,7 @@ public class RZService extends Service
 		return serviceBinder;
 	}
 
+	// 销毁
 	@Override
 	public void onDestroy()
 	{
