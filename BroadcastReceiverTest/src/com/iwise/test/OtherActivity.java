@@ -7,11 +7,12 @@ import android.view.View;
 
 /**
  * 
+ * 鍙戦�佸箍鎾殑鐣岄潰
  * 
  * @ClassName: OtherActivity
- * @Description:发送广播的界面
+ * @Description:
  * @author Harvey
- * @date 2014-7-17 上午10:14:14
+ * @date 2014-7-18 涓婂崍9:54:55
  * 
  */
 public class OtherActivity extends Activity
