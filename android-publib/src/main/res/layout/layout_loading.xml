@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/WMatchHWrap"
+              android:background="@drawable/bg_wihte_fillet"
+              android:orientation="vertical"
+              android:padding="@dimen/dimen_10dp">
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/loading"/>
+
+    <TextView
+        android:id="@+id/tv_loading_tip"
+        style="@style/WWrapHWrap"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="一大波数据正在路上..."
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/dimen_15dp"/>
+
+</LinearLayout>

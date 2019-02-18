@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/WWrapHWrap"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgView"
+        style="@style/WWrapHWrap"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/WWrapHWrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textSize="@dimen/dimen_12dp"/>
+
+</LinearLayout>

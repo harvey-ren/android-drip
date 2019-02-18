@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_red_f30">#ff3300</color>
+    <color name="color_blue_35">#356ccf</color>
+    <color name="color_blue">#0000FF</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_000">#000000</color>
+    <color name="color_111">#111111</color>
+    <color name="color_222">#222222</color>
+    <color name="color_333">#333333</color>
+    <color name="color_444">#444444</color>
+    <color name="color_555">#555555</color>
+    <color name="color_666">#666666</color>
+    <color name="color_777">#777777</color>
+    <color name="color_888">#888888</color>
+    <color name="color_999">#999999</color>
+    <color name="color_aaa">#aaaaaa</color>
+    <color name="color_bbb">#bbbbbb</color>
+    <color name="color_ccc">#cccccc</color>
+    <color name="color_cc">#cccccc</color>
+    <color name="color_ddd">#dddddd</color>
+    <color name="color_eee">#eeeeee</color>
+    <color name="color_fff">#ffffff</color>
+    <color name="color_80">#808080</color>
+    <color name="color_f2">#f2f2f2</color>
+    <color name="color_d9">#d9d9d9</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_bf">#bfbfbf</color>
+    <color name="color_3c">#3c3c3c</color>
+    <color name="color_c2">#c2c2c2</color>
+    <color name="color_d8">#d8d8d8</color>
+    <color name="color_97">#979797</color>
+    <color name="color_gray_33">#333333</color>
+    <color name="color_gray_b0">#b0afb4</color>
+    <color name="color_green_00ff7f">#00FF7F</color>
+    <color name="color_28">#282828</color>
+    <color name="color_5c5e66">#5c5e66</color>
+
+    <color name="color_gray_common">#efeff4</color>
+
+
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="half_color_blue_33">#333333cc</color>
+    <color name="color_blue_half_33">#553333cc</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="black_and_gray_color">#888</color>
+
+    <color name="blue35_btn_bg_color">@color/color_blue_35</color>
+    <color name="blue35_btn_bg_pressed_color">@color/color_blue</color>
+
+    <color name="primary_text_color">@color/color_5c5e66</color>
+</resources>

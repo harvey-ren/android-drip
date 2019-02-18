@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <com.ktcatv.publib.view.ITextView
+            android:id="@+id/item_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/primary_text_size"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/right_arrow"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_width="@dimen/dimen_20dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/SplitLine"/>
+
+</LinearLayout>

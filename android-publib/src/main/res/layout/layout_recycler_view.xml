@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ktcatv.publib.view.ISwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    style="@style/WMatchHMatch"
+    android:background="@color/color_white">
+
+    <FrameLayout
+        style="@style/WMatchHMatch">
+
+        <TextView
+            android:id="@+id/tv_empty_hint"
+            style="@style/WMatchHMatch"
+            android:gravity="center"
+            android:text="空空如也，啥都木有哟~"
+            android:textColor="@color/color_cc"
+            android:textSize="@dimen/dimen_17dp"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/WMatchHMatch"/>
+    </FrameLayout>
+
+</com.ktcatv.publib.view.ISwipeRefreshLayout>

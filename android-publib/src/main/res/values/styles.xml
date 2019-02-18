@@ -1,0 +1,258 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/color_blue_35</item>
+    </style>
+
+    <style name="AppWhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+    </style>
+
+    <style name="AppTransparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/color_transparent</item>
+    </style>
+
+    <style name="BaseIconWithTextView">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:drawablePadding">@dimen/dimen_10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MainIconWithTextView" parent="BaseIconWithTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/dimen_15dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Animation.Dialog">
+
+        <!--windowFrame 边框为无-->
+        <item name="android:windowFrame">@null</item>
+
+        <!--没有标题-->
+        <item name="android:windowNoTitle">true</item>
+
+        <!--除去背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!--是否浮现在Activity之上-->
+        <item name="android:windowIsFloating">true</item>
+
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+
+        <!--是否去掉覆盖层-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <!--模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!--设置背景颜色-->
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:windowEnterAnimation">@anim/dialog_in_from_bottom</item>
+
+        <item name="android:windowExitAnimation">@anim/dialog_out_from_bottom</item>
+    </style>
+
+
+    <!--分割线-->
+    <style name="SplitLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/color_cc</item>
+    </style>
+
+    <style name="SplitBlueLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/color_blue_35</item>
+    </style>
+
+
+    <style name="SplitLineVertical">
+        <item name="android:layout_width">0.1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_cc</item>
+    </style>
+
+
+    <!--对话框的item-->
+    <style name="DialogItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/dimen_12dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <!--主要文本大小 -->
+    <style name="BasePrimaryTextSize">
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+    </style>
+
+    <style name="OneLineText" parent="BasePrimaryTextSize">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <!--主要黑色文本风格 -->
+    <style name="BlackPrimaryText" parent="BasePrimaryTextSize">
+        <item name="android:textColor">@color/color_28</item>
+    </style>
+
+    <!--主要白色文本风格 -->
+    <style name="WhitePrimaryText" parent="BasePrimaryTextSize">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <style name="OneLineBlackPrimaryText" parent="OneLineText">
+        <item name="android:textColor">@color/color_28</item>
+    </style>
+
+
+    <style name="OneLineWhitePrimaryText" parent="OneLineText">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <style name="WhitePrimaryText.WMatchHWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="WhitePrimaryText.WWrapHWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="OneLineWhitePrimaryText.WMatchHWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="OneLineWhitePrimaryText.WWrapHWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="BlackPrimaryText.WMatchHWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="BlackPrimaryText.WWrapHWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="OneLineBlackPrimaryText.WMatchHWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="OneLineBlackPrimaryText.WWrapHWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="OneLineBlackPrimaryText.WWrapHWrap.AddClickBg">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="OneLineWhitePrimaryText.WMatchHWrap.AddClickBg">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="WMatchHMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WMatchHWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="WMatchHMatch.WhiteBg">
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+
+    <style name="WWrapHMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WWrapHWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="WMatchHWrap.AddClickBg">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="WWrapHWrap.AddClickBg">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!--跑马灯风格-->
+    <style name="MarqueeText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+</resources>

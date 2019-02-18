@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WMatchHWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/layout_right"
+            style="@style/WWrapHMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/layout_title_middle"
+            style="@style/WMatchHMatch"
+            android:layout_marginLeft="@dimen/dimen_60dp"
+            android:layout_marginRight="@dimen/dimen_60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/MarqueeText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:marqueeRepeatLimit="1"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_19sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_d8"></View>
+</LinearLayout>

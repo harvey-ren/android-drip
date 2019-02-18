@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WMatchHWrap"
+    android:background="@drawable/bg_color666_corners"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/WWrapHWrap"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_18dp"
+        android:paddingRight="@dimen/dimen_18dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_14sp" />
+
+</LinearLayout>

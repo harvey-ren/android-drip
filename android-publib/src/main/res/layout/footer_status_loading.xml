@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="@dimen/dimen_5dp">
+
+    <com.ktcatv.publib.view.ProgressView
+        android:id="@+id/progressView"
+        android:layout_width="@dimen/dimen_15dp"
+        android:layout_height="@dimen/dimen_15dp"/>
+
+    <com.ktcatv.publib.view.ITextView
+        android:id="@+id/tv_loading_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:text="@string/loading"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/dimen_15dp"/>
+
+</LinearLayout>
